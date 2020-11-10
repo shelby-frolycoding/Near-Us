@@ -1,8 +1,7 @@
 body {
   text-align: center;
   background-color: black;
-  background-image: url('https://kateogrady.files.wordpress.com/2012/03/background.jpg');
-  background: repeat;
+  background-image: url('https://unsplash.com/photos/uhjiu8FjnsQ/download');
   font-family:  'Press Start 2P', cursive;
   color: whitesmoke;
   text-shadow: 2px 2px gray;
@@ -25,3 +24,12 @@ body {
   color: darkgray;
   text-shadow: 2px 2px black;
   }
+  h1 {
+  font-size: 20px;
+  }
+  header {
+  font-size: 30px;
+  color: orange;
+  }
+  
+  
