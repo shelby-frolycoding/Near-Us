@@ -8,7 +8,7 @@ Near Us
 
 ## Project Description
 
-"Space is all around our blue dot--don't you want to know what's out there?" Find out what Near Earth Objects (NEOs) have been near us or will be near us the future. 
+"Space is all around our little blue dot--don't you want to know what's out there?" Find out what Near Earth Objects (NEOs) have been near us or will be near us the future. 
 
 ## API and Data Sample
 
@@ -47,7 +47,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Add second or third API -- the Astronomy pic of the Day and maybe something with the ISS
 -daily APOD would be totes cool
-- Add more interactive features (see above) liek a floating space station that you can slick and it give you the location of the ISS
+- Add more interactive features (see above) like a floating space station that you can slick and it give you the location of the ISS
 - maybe have daily NASA facts?
 
 ## Project Schedule
@@ -60,9 +60,13 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Nov 10| Project Approval | Complete
-|Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Nov 13| Pseudocode / actual code | Incomplete
-|Nov 16| MVP | Incomplete
+|Nov 10| Begin Project: Core Application Structure (HTML, CSS, etc.) | inComplete
+|Nov 12| Start working with Api/JS| Incomplete
+|Nov 13| Begin to finilaze getting data output, finilaze basic design work w/CSS flexbox|  Incomplete
+|Nov 15| Schedule time with Squad lead| Incomplete
+|Nov 14| MVP basics done!| Incomplete
+|Nov 15| post- MVP details start| Incomplete
+|Nov 15| Schedule time with Squad lead| Incomplete
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -83,13 +87,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Doing all the side work | H | 3hrs| |  |
-| Adding Form | H | 4+hrs|  |  |
-| Working with API | H | 4+hrs| |  |
+| Adding Form | H | 4hrs|  |  |
+| Working with API/JS | Very H | 20+hrs| |  |
 | Setting up Html | H | 2hrs| |  |
 | Setting up basic CSS | H | 2hrs| |  |
 |Fine-tuning CSS/design | L | 3hrs| |  |
+|Post MVP work | L | 10hrs| |  |
 | Adding in more features/content| L | 3hrs| |  |
-| Total | H | hrs| hrs | hrs |
+| Total | H | 47hrs| hrs | hrs |
 
 ## Code Snippet
 
