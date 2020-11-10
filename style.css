@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-color: black;
+  background-image: url('https://kateogrady.files.wordpress.com/2012/03/background.jpg');
+  background: repeat;
+  font-family:  'Press Start 2P', cursive;
+  color: whitesmoke;
+  text-shadow: 2px 2px gray;
+  }
+  button {
+    background-color: gold ;
+    width: 100px;
+    height: auto;
+    font-family:  'Press Start 2P', cursive;
+  }
+  input {
+  font-family:  'Press Start 2P', cursive;
+  background-color: gold ;
+    width: 150px;
+    height: auto;
+  
+  }
+  h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: darkgray;
+  text-shadow: 2px 2px black;
+  }
