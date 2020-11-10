@@ -27,6 +27,8 @@ https://api.nasa.gov/neo/rest/v1/neo/browse/
 
 ## Wireframes
 
+updated wireframe: https://wireframe.cc/Chdhd3
+
 https://wireframe.cc/fjs3Uz
 
 ### MVP/PostMVP
