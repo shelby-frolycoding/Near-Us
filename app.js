@@ -12,7 +12,7 @@ async function getData(neo) {
     console.log(res)
     let response = res.data
     console.log(response)
-    
+
   } catch (error) {
     console.log(error)
   }
@@ -23,13 +23,16 @@ async function getData(neo) {
     const neoName = info.data.name_limited
 
     const neoDate = document.createElement('h3')
-    neoDate.textContent =info.data.close_approach_data
-   neoDate.className = 'neo-list'
+    neoDate.textContent = info.data.close_approach_data
+    neoDate.className = 'neo-list'
     neoDate.append(neoDiv)
     neoName.append(neoDiv)
-    
+
 
   })
 }
 
 getData(1977)
+
+let greeting = "Hello"
+console.log(greeting)
