@@ -1,60 +1,116 @@
 //endpoint: https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe
-//http://www.neowsapp.com/rest/v1/feed?start_date=2015-09-09&end_date=2015-09-10&detailed=false&api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe
+//
+//https://api.nasa.gov/neo/rest/v1/feed?start_date=${year}-09-07&end_date=2015-09-08&api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe
 
 
 const yearInput = document.querySelector('#year-blank')
 const monthInput = document.querySelector('#month-blank')
+const dayInput = document.querySelector('#day-blank')
+
 const searchButton = document.querySelector('#search')
 
-async function getDate(neo) {
-  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=START_DATE&end_date=END_DATE&api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe`
+function findYear() {
+  const yearSearch = yearInput.value
+  const monthSearch = monthInput.value
+  const daySearch = dayInput.value
+  getData(yearSearch, monthSearch, daySearch)
+  return
+}
+searchButton.addEventListener("click", findYear)
+
+
+
+async function getData(year, month, day) {
+  const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${year}-${month}-${day}&api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe`
   try {
     const res = await axios.get(url)
     console.log(res)
-    let response = res.data
+    let response = res.data.results
     console.log(response)
 
-  } catch (error) {
+    response.forEach((info) => {
+
+      const neoId = document.querySelector('.neo-list')
+      const neoDiv = document.createElement('div')
+      const neoName = info.data.name_limited
+
+      const neoDate = document.createElement('h3')
+      const dateNeo = info.data.near_earth_objects
+      neoDate.textContent = `${dateNeo}`
+
+      neoDate.className = 'neo-list'
+      neoId.append(neoDate)
+
+      //     const neoMiss = document.createElement('h5')
+      //     neoMiss.textContent = info.data.miss_distance.miles
+      //     neoMiss.className = 'neo-list'
+
+      //     const neoSpeed = document.createElement('h6')
+      //     neoSpeed.textContent = info.data.relative_velocity.miles_per_hour
+      //     neoSpeed.className = 'neo-list'
+      //     neoDate.append(neoDiv)
+      //     neoName.append(neoDiv)
+      //     neoSpeed.append(neoDiv)
+      //     neoMiss.append(neoDiov)
+
+
+    })
+
+  }
+  catch (error) {
     console.log(error)
   }
-  response.forEach((info) => {
 
-    const neoId = document.querySelector('.neo-list')
-    const neoDiv = document.createElement('div')
-    const neoName = info.data.name_limited
-
-    const neoDate = document.createElement('h3')
-    neoDate.textContent = info.data.close_approach_data
-    neoDate.className = 'neo-list'
-
-    const neoMiss = document.createElement('h5')
-    neoMiss.textContent = info.data.miss_distance.miles
-    neoMiss.className = 'neo-list'
-
-    const neoSpeed = document.createElement('h6')
-    neoSpeed.textContent = info.data.relative_velocity.miles_per_hour
-    neoSpeed.className = 'neo-list'
-    neoDate.append(neoDiv)
-    neoName.append(neoDiv)
-    neoSpeed.append(neoDiv)
-    neoMiss.append(neoDiov)
-
-
-  })
 }
-function removeData() {
-  const oldNeo = document.querySelector('.neo-list')
-  while (oldNeo.lastChild) {
-    oldNeo.removeChild(oldNeo.lastChild)
-  }
-}
-const button = document.querySelector('button')
 
 
-button.addEventListener('click', () => {
-  const optionValue = document.querySelector('#year-blank', '#month-blank').value
-  removeData()
-  getData(optionValue)
-})
+
+
+
+
+
+
+
+
+
+// }
+// function removeData() {
+//   const oldNeo = document.querySelector('.neo-list')
+//   while (oldNeo.lastChild) {
+//     oldNeo.removeChild(oldNeo.lastChild)
+//   }
+// }
+// 
+
+
+
+// async function getApod(apod) {
+// const url = `https://api.nasa.gov/planetary/apod?api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe`
+//   try {
+//     const res = await axios.get(url)
+//     console.log(res)
+//     let response = res.data
+//     console.log(response)
+
+//     response.forEach((info) => {
+//       const apodImg = document.createElement('img')
+//       apodImg.setAttribute('src', data.image)
+
+//     })
+//   }
+
+//  catch (error) {
+//   console.log(error)
+//   }
+//   getApod()
+
+
+
+
+
+
+
+
+
 
 
