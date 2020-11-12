@@ -31,14 +31,14 @@ async function getData(year, month, day) {
     response.forEach((info) => {
 
       const neoId = document.querySelector('.neo-list')
-      const neoDiv = document.createElement('div')
-      const neoName = info.data.name_limited
+      // const neoDiv = document.createElement('div')
+      // const neoName = info.data.name_limited
 
-      const neoDate = document.createElement('h3')
+      const neoDate = document.createElement('p')
       const dateNeo = info.data.near_earth_objects
       neoDate.textContent = `${dateNeo}`
 
-      neoDate.className = 'neo-list'
+      neoDate.className = 'date-list'
       neoId.append(neoDate)
 
       //     const neoMiss = document.createElement('h5')
