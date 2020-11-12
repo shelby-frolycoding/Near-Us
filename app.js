@@ -25,7 +25,7 @@ async function getData(year, month, day) {
   try {
     const res = await axios.get(url)
     console.log(res)
-    let response = res.data.results
+    let response = await res.data.near_earth_objects[`${year}-${month}-${day}`]
     console.log(response)
 
     response.forEach((info) => {
@@ -35,7 +35,7 @@ async function getData(year, month, day) {
       // const neoName = info.data.name_limited
 
       const neoDate = document.createElement('p')
-      const dateNeo = info.data.near_earth_objects
+      const dateNeo = info.close_approach_data[0].close_approach_date
       neoDate.textContent = `${dateNeo}`
 
       neoDate.className = 'date-list'
