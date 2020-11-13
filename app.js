@@ -14,6 +14,7 @@ function findYear() {
   const monthSearch = monthInput.value
   const daySearch = dayInput.value
   getData(yearSearch, monthSearch, daySearch)
+  removeData()
   return
 }
 searchButton.addEventListener("click", findYear)
@@ -32,41 +33,31 @@ async function getData(year, month, day) {
 
       const neoId = document.querySelector('.neo-list')
 
+      const neoName = document.createElement('h3')
+      const getName = info.name
+      neoName.textContent = `Object Name: ${getName}|`
+
       const neoDate = document.createElement('p')
       const dateNeo = info.close_approach_data[0].close_approach_date
-      neoDate.textContent = `Approach Date: ${dateNeo}`
+      neoDate.textContent = ` Approach Date: ${dateNeo}`
 
-      const neoName = document.createElement('p')
-      const getName = info.name
-      neoName.textContent = `Name: ${getName}`
 
-      const missDist = document.createElement('p')
+      const missDist = document.createElement('h5')
       const neoDist = info.close_approach_data[0].miss_distance.miles
-      missDist.textContent = `Miss Distance: ${neoDist} miles`
+      missDist.textContent = ` Miss Distance: ${neoDist} miles`
 
-      const neoDanger = document.createElement('p')
+      const neoDanger = document.createElement('h6')
       const dangerNeo = info.is_potentially_hazardous_asteroid
-      neoDanger.textContent = `Is it a potentially dangerous asteroid? ${dangerNeo}`
+      neoDanger.textContent = ` Is it a potentially dangerous asteroid? ${dangerNeo}`
 
 
       neoDate.className = 'date-list'
-      neoId.append(neoDate)
       neoId.append(neoName)
+      neoId.append(neoDate)
       neoId.append(missDist)
       neoId.append(neoDanger)
 
-      //     const neoMiss = document.createElement('h5')
-      //     neoMiss.textContent = info.data.miss_distance.miles
-      //     neoMiss.className = 'neo-list'
-
-      //     const neoSpeed = document.createElement('h6')
-      //     neoSpeed.textContent = info.data.relative_velocity.miles_per_hour
-      //     neoSpeed.className = 'neo-list'
-      //     neoDate.append(neoDiv)
-      //     neoName.append(neoDiv)
-      //     neoSpeed.append(neoDiv)
-      //     neoMiss.append(neoDiov)
-
+      
 
     })
 
@@ -78,23 +69,13 @@ async function getData(year, month, day) {
 }
 
 
+function removeData() {
+  const oldList = document.querySelector('.neo-list')
+  while (oldList.lastChild) {
+    oldList.removeChild(oldList.lastChild)
+  }
+}
 
-
-
-
-
-
-
-
-
-// }
-// function removeData() {
-//   const oldNeo = document.querySelector('.neo-list')
-//   while (oldNeo.lastChild) {
-//     oldNeo.removeChild(oldNeo.lastChild)
-//   }
-// }
-// 
 
 
 
