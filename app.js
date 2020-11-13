@@ -31,15 +31,29 @@ async function getData(year, month, day) {
     response.forEach((info) => {
 
       const neoId = document.querySelector('.neo-list')
-      // const neoDiv = document.createElement('div')
-      // const neoName = info.data.name_limited
 
       const neoDate = document.createElement('p')
       const dateNeo = info.close_approach_data[0].close_approach_date
-      neoDate.textContent = `${dateNeo}`
+      neoDate.textContent = `Approach Date: ${dateNeo}`
+
+      const neoName = document.createElement('p')
+      const getName = info.name
+      neoName.textContent = `Name: ${getName}`
+
+      const missDist = document.createElement('p')
+      const neoDist = info.close_approach_data[0].miss_distance.miles
+      missDist.textContent = `Miss Distance: ${neoDist} miles`
+
+      const neoDanger = document.createElement('p')
+      const dangerNeo = info.is_potentially_hazardous_asteroid
+      neoDanger.textContent = `Is it a potentially dangerous asteroid? ${dangerNeo}`
+
 
       neoDate.className = 'date-list'
       neoId.append(neoDate)
+      neoId.append(neoName)
+      neoId.append(missDist)
+      neoId.append(neoDanger)
 
       //     const neoMiss = document.createElement('h5')
       //     neoMiss.textContent = info.data.miss_distance.miles

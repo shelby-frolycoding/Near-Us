@@ -11,7 +11,7 @@ body {
   display: flex;
   position: relative;
   align-items: flex-start;
-  animation: myfirst 20s 20;
+  animation: myfirst 30s 20;
   animation-direction: normal;
 
   /* props to help with my animation go to https://www.w3schools.com/cssref/css3_pr_animation-direction.asp */
@@ -20,8 +20,8 @@ body {
 
 @keyframes myfirst {
   0%   { left: 0px; top: 0px;}
-  25%  { left: 750px; top: 0px;}
-  50%  { left: 750px; top: 200px;}
+  25%  { left: 1300px; top: 0px;}
+  50%  { left: 1300px; top: 200px;}
   75%  { left: 0px; top: 200px;}
   100% { left: 0px; top: 0px;}
   
@@ -47,7 +47,10 @@ body {
   font-family: 'Orbitron', sans-serif;
   color: darkgray;
   text-shadow: 2px 2px black;
+  margin-left: 40px;
+  margin-right: 40px;
   }
+
   h1 {
   font-size: 20px;
   }
@@ -55,7 +58,7 @@ body {
   font-size: 30px;
   color: orange;
   margin: 20px;
-  letter-spacing: 11px;
+  letter-spacing: 15px;
   }
   .ending {
     margin: 20px 20px
