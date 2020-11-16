@@ -7,8 +7,8 @@ body {
   text-shadow: 2px 2px gray;
   }
   img{
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   .iss {
@@ -124,5 +124,29 @@ body {
     
     
   }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+  }
+  .astrodude {
+    display: flex;
+    position: relative;
+    align-items: center;
+    animation: mysecond 100s 20;
+    animation-direction: normal;
   
+    /* props to help with my animation go to https://www.w3schools.com/cssref/css3_pr_animation-direction.asp */
+    
+  }
   
+  @keyframes mysecond {
+    0%   { left: 0px; top: 0px;}
+    25%  { left: 1200px; top: 0px;}
+    50%  { right: 1200px; top: 0px;}
+    75%  { left: 0px; top: 0px;}
+    100% { left: 0px; top: 0px;}
+  }
