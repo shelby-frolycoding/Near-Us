@@ -87,14 +87,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Doing all the side work | H | 3hrs| | 5 |
-| Adding Form | H | 4hrs|   | 7 |
-| Working with API/JS | Very H | 20+hrs| | 15 |
-| Setting up Html | H | 2hrs| |  2|
+| Adding Form | H | 4hrs| 7  | 7 |
+| Working with API/JS | Very H | 20+hrs| 10| 15 |
+| Setting up Html | H | 2hrs| 2 |  2|
 | Setting up basic CSS | H | 2hrs| | 4 |
-|Fine-tuning CSS/design | L | 3hrs| | 10 |
+|Fine-tuning CSS/design | L | 3hrs| 10 | 10 |
 |Post MVP work | L | 10hrs| 10|10  |
 | Adding in more features/content| L | 3hrs| |3  |
-| Total | H | 47hrs| hrs | hrs | 55|
+| Total | H | 47hrs|55 hrs |55 hrs |
 
 ## Code Snippet
 
