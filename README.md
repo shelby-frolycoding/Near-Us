@@ -58,16 +58,16 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | complete
 |Nov 10| Project Approval | Complete
-|Nov 10| Begin Project: Core Application Structure (HTML, CSS, etc.) | inComplete
-|Nov 12| Start working with Api/JS| Incomplete
-|Nov 13| Begin to finilaze getting data output, finilaze basic design work w/CSS flexbox|  Incomplete
-|Nov 15| Schedule time with Squad lead| Incomplete
-|Nov 14| MVP basics done!| Incomplete
-|Nov 15| post- MVP details start| Incomplete
-|Nov 15| Schedule time with Squad lead| Incomplete
-|Nov 17| Presentations | Incomplete
+|Nov 10| Begin Project: Core Application Structure (HTML, CSS, etc.) | Complete
+|Nov 12| Start working with Api/JS| complete
+|Nov 13| Begin to finilaze getting data output, finilaze basic design work w/CSS flexbox|  complete
+|Nov 15| Schedule time with Squad lead| complete
+|Nov 14| MVP basics done!| complete
+|Nov 15| post- MVP details start| complete
+|Nov 15| Schedule time with Squad lead| complete
+|Nov 17| Presentations |  in progress
 
 ## Priority Matrix
 
@@ -86,24 +86,33 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Doing all the side work | H | 3hrs| |  |
-| Adding Form | H | 4hrs|  |  |
-| Working with API/JS | Very H | 20+hrs| |  |
-| Setting up Html | H | 2hrs| |  |
-| Setting up basic CSS | H | 2hrs| |  |
-|Fine-tuning CSS/design | L | 3hrs| |  |
-|Post MVP work | L | 10hrs| |  |
-| Adding in more features/content| L | 3hrs| |  |
-| Total | H | 47hrs| hrs | hrs |
+| Doing all the side work | H | 3hrs| | 5 |
+| Adding Form | H | 4hrs| 7  |  |
+| Working with API/JS | Very H | 20+hrs| | 15 |
+| Setting up Html | H | 2hrs| |  2|
+| Setting up basic CSS | H | 2hrs| | 4 |
+|Fine-tuning CSS/design | L | 3hrs| | 10 |
+|Post MVP work | L | 10hrs| 10|  |
+| Adding in more features/content| L | 3hrs| |3  |
+| Total | H | 47hrs| hrs | hrs | 55
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+.neo-list {
+  color: whitesmoke;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px black;
+  justify-content: space-around;
+  justify-content: center;
+  display: flex;  
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, black, rgb(26, 25, 25));
+  letter-spacing: 5px;
+  font-size: 15px;
+  background-image: url("https://images.unsplash.com/photo-1583446689741-b39fa2703b22?ixlib=rb-1.2.1&auto=format&fit=crop&w=1596&q=80");
+  box-shadow: 0 0 15px 15px rgb(0, 0, 0) inset;
 ```
 
 ## Change Log
