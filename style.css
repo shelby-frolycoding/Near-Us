@@ -65,8 +65,10 @@ body {
   text-shadow: 2px 2px black;
   justify-content: space-around;
   justify-content: center;
-  display: flex;  
-  flex-wrap: wrap;
+  padding-bottom: 7px;
+  padding-top: 5px;
+  /* display: flex;  
+  flex-wrap: wrap; */
   background-image: linear-gradient(to right, black, rgb(26, 25, 25));
   letter-spacing: 5px;
   font-size: 15px;

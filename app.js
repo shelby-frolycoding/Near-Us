@@ -57,7 +57,7 @@ async function getData(year, month, day) {
       neoId.append(missDist)
       neoId.append(neoDanger)
 
-      
+
 
     })
 
@@ -78,26 +78,6 @@ function removeData() {
 
 
 
-
-// async function getApod(apod) {
-// const url = `https://api.nasa.gov/planetary/apod?api_key=CRJtRnLswIU7kXmTsDuzmnwJy55e0sGEmWrKLcFe`
-//   try {
-//     const res = await axios.get(url)
-//     console.log(res)
-//     let response = res.data
-//     console.log(response)
-
-//     response.forEach((info) => {
-//       const apodImg = document.createElement('img')
-//       apodImg.setAttribute('src', data.image)
-
-//     })
-//   }
-
-//  catch (error) {
-//   console.log(error)
-//   }
-//   getApod()
 
 
 
